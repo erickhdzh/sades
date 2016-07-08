@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Kanit:700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:700' rel='stylesheet' type='text/css'>
+    <style media="screen">
+    @keyframes move {
+	0% {
+		background-position: 0 60%, 0 50%;
+	}
+	100% {
+	  background-position: 0 60%, 100% 50%;
+	}
+}
+      body{
+        /*background-color: #263645;
+	background-image: url('http://timteeling.com/dev/img/network.svg'), radial-gradient(200px 500px at center, #ff8300 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0));
+	background-size: 125%, 50% 100%;
+  background-position: 0 60%, 0 100%;
+  animation: move 5s linear infinite;*/
+
+  /* Extra Styles */
+  /*height: 300px;*/
+  /*box-shadow: inset 0 0 25px rgba(0,0,0,.5);*/
+  /*border: 2px solid #263645;
+  border-right: 0;
+  border-left: 0;*/
+
+  /*background-image: url(img/blue2.png);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  background-color: #5882FA;
+      }
+      .modal-content {
+        -webkit-box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.75);
+
+      }
+      #hdr {
+        border-top: 8px solid #5FB404;
+        border-radius: 0.3em;
+      }
+      #hdr2{
+        border-top: 8px solid #5FB404;
+        background-color: #F2F2F2;
+        border-bottom: 1px solid #BDBDBD;
+
+        background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+        background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+        background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+        background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+        -webkit-background-size: 3px 3px;
+        -moz-background-size: 3px 3px;
+        background-size: 3px 3px;
+      }
+      h2 {
+        font-family: 'Kanit';
+      }
+      h3 {
+        font-family: 'Droid Sans';
+      }
+      input:focus{
+        background-color: #F5F6CE;
+      }
+      .modal-footer {
+        background-color: #0B610B;
+        color: white;
+        margin-top: 32%;
+        border-bottom-left-radius: 0.3em;
+        border-bottom-right-radius: 0.3em;
+      }
+      .input:focus {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #AAA;
+}
+
+input:focus::-webkit-input-placeholder {
+  /*color: dodgerblue;*/
+  color: #D8D8D8;
+}
+
+.input-group-addon {
+  background-color: #A9E2F3;
+}
+
+.input:focus + .underline {
+  transform: scale(1);
+}
+      .underline {
+  background-color: dodgerblue;
+  display: inline-block;
+  height: 2px;
+  left: 0px;
+
+  position: absolute;
+  top: 45px;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  width: 100%;
+}
+    </style>
+  </head>
+  <body>
+
+    <!--login modal-->
+
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div id="hdr" class="modal-header">
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> -->
+          <img src="img/logo.png" class="img-responsive center-block" alt="" />
+      </div>
+      <div id="hdr2" class="modal-header">
+        <h2 class="text-center">SADES</h2>
+        <h3 class="text-center">Login</h3>
+      </div>
+      <div class="modal-body">
+          <form class="form col-md-12 center-block">
+            <div class="form-group input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input type="text" class="form-control input input-lg" placeholder="Usuario" required>
+              <span class="underline"></span>
+            </div>
+            <div class="form-group input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+              <input type="password" class="form-control input input-lg" placeholder="Contraseña" required>
+              <span class="underline"></span>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary btn-lg btn-block">Ingresar</button>
+              <span id="pwd"><a href="#"><h4>¿Olvidaste tu contraseña?</h4></a></span>
+            </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+          <div class="col-md-12">
+          <h6>All rights reserved: Design by Madata IT</h6>
+		  </div>
+      </div>
+  </div>
+  </div>
+
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  </body>
+</html>
