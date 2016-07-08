@@ -1,0 +1,116 @@
+
+
+body {
+  /*background-color: #263645;
+  background-image: url('http://timteeling.com/dev/img/network.svg'), radial-gradient(200px 500px at center, #ff8300 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0));
+  background-size: 125%, 50% 100%;
+  background-position: 0 60%, 0 100%;
+  animation: move 5s linear infinite;*/
+
+  /* Extra Styles */
+  /*height: 300px;*/
+  /*box-shadow: inset 0 0 25px rgba(0,0,0,.5);*/
+  /*border: 2px solid #263645;
+  border-right: 0;
+  border-left: 0;*/
+
+  /*background-image: url(img/blue2.png);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  background-color: #5882FA;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  -webkit-box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 22px 3px rgba(0,0,0,0.75);
+  background-color: #F2F2F2;
+
+  animation: intro 4s;
+}
+
+#hdr {
+  border-top: 8px solid #5FB404;
+  border-radius: 0.3em;
+  background-color: white;
+}
+
+#hdr2 {
+  border-top: 8px solid #5FB404;
+  background-color: #F2F2F2;
+
+  /*background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  background-size: 3px 3px;*/
+}
+
+h2 {
+  font-family: 'Kanit';
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Droid Sans';
+  margin: 0;
+}
+
+input:focus {
+  background-color: #F5F6CE;
+}
+
+.modal-footer {
+  background-color: #0B610B;
+  color: white;
+  margin-top: 32%;
+  border-bottom-left-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+}
+
+.input:focus {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #AAA;
+}
+
+input:focus::-webkit-input-placeholder {
+  /*color: dodgerblue;*/
+  color: #D8D8D8;
+}
+
+.input-group-addon {
+  background-color: #A9E2F3;
+}
+
+.input:focus + .underline {
+  transform: scale(1);
+}
+
+.underline {
+  background-color: dodgerblue;
+  display: inline-block;
+  height: 2px;
+  left: 0px;
+
+  position: absolute;
+  top: 45px;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  width: 100%;
+}
